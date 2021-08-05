@@ -4,3 +4,5 @@ indeed_resul = requests.get('https://www.indeed.com/jobs?q=python&limit=50&vjk=f
 
 print(indeed_resul)
 
+
+
