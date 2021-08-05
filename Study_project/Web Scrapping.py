@@ -7,6 +7,7 @@ print(indeed_resul)
 print("1차 수정")
 print("2차 수정")
 print("2차 수정")
+print("2차 수정")
 
 
 
