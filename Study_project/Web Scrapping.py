@@ -7,9 +7,7 @@ print(indeed_resul)
 print("진행중")
 
 print("히스토리를 보여주는건가 ?")
-print("히스토리를 보여주는건가 ?")
-print("히스토리를 보여주는건가 ?")
-print("히스토리를 보여주는건가 ?")
+
 
 
 
