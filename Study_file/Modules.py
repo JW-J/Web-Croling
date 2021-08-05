@@ -1,5 +1,4 @@
 # 모듈 전체를 가져와 사용
-import math
 
 #  math에 특정 함수만 가져와 ceil, fsum만 사용
 from math import ceil, fsum
