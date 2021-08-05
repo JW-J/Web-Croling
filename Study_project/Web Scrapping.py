@@ -7,9 +7,7 @@ print(indeed_resul)
 print("진행중")
 
 print("테스트")
-print("테스트")
-print("테스트")
-print("테스트")
+print("커밋은 그냥 로컬에 저장?")
 
 
 
