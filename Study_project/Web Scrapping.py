@@ -5,7 +5,12 @@ indeed_resul = requests.get('https://www.indeed.com/jobs?q=python&limit=50&vjk=f
 print(indeed_resul)
 
 print("진행중")
+
 print("테스트")
+print("테스트")
+print("테스트")
+print("테스트")
+
 
 
 
