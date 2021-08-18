@@ -44,8 +44,15 @@ for link in links:
 pages = []
 for link in links[:-1]:
     pages.append(int(link.string))
-print(pages)
+#print(pages)
 # 예제2) 결과 값
 # [2, 3, 4, 5]  / integer(정수형)
 
-
+# 예제3) 예제 3번에서 제일 큰 값을 가져오기
+pages = []
+for link in links[:-1]:
+    pages.append(int(link.string))
+max_pages = pages [-1]
+print(max_pages)
+# 예제3) 결과 값
+# 5 / 배열중 맨 마지막 값, 즉 제일 큰 값을 가져옴.
