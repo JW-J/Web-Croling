@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 # 해당 페이지의 html 을 모두 가져옴.
 indeed_result = requests.get('https://www.indeed.com/jobs?q=python&limit=50&vjk=f6294b6c85e1cb47')
-#print(indeed_result.text)zz
+#print(indeed_result.text)
 
 # html 을 indeed_soup test로 저장
 indeed_soup = BeautifulSoup(indeed_result.text, "html.parser")
@@ -23,7 +23,6 @@ links = pagination.find_all('a')
 
 
 # pages안에 있는 a태그 리스트에서 span 태그만 가져와서 page에넣고 이를 spans 배열에 삽입한다.
-
 # 예제1) 태그 가져오기.
 # spans 배열에 삽입.
 spans = []
