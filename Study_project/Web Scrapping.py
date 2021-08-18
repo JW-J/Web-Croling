@@ -20,15 +20,24 @@ links = pagination.find_all('a')
 #  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
 # print(pages)
 
-
-
 # pages안에 있는 a태그 리스트에서 span 태그만 가져와서 page에넣고 이를 spans 배열에 삽입한다.
+# 예제0) String 으로 가져오기.
+pages = []
+for link in links:
+    pages.append(link.string)
+pages = pages[0:-1]
+#print(pages)
+# 예제0) 결과 값
+# ['2', '3', '4', '5'] / 문자열(string)
+
 # 예제1) 태그 가져오기.
 # spans 배열에 삽입.
 spans = []
 for link in links:
     spans.append(link.find("span"))
-print(spans[0:-1])
+#print(spans[0:-1])
+#  예제1) 결과 값
+# [<span class="pn">2</span>, <span class="pn">3</span>, <span class="pn">4</span>, <span class="pn">5</span>]
 
 # 예제2) 문자열 가져오기
 # links 내 배열에 들어가는 끝에 문자열(next) 포함되어있어서 에러발생함.
@@ -36,3 +45,7 @@ pages = []
 for link in links[:-1]:
     pages.append(int(link.string))
 print(pages)
+# 예제2) 결과 값
+# [2, 3, 4, 5]  / integer(정수형)
+
+
