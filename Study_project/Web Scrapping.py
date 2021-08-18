@@ -1,7 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 
+# 해당 페이지의 html 을 모두 가져옴.
 indeed_result = requests.get('https://www.indeed.com/jobs?q=python&limit=50&vjk=f6294b6c85e1cb47')
+#print(indeed_result.text)
 
 # html 을 indeed_soup test로 저장
 indeed_soup = BeautifulSoup(indeed_result.text, "html.parser")
@@ -35,6 +37,3 @@ pages = []
 for link in links[:-1]:
     pages.append(int(link.string))
 print(pages)
-
-# 해당 페이지의 html 을 가져와서 출력
-# print(indeed_resul.text)
