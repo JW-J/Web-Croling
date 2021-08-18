@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 # 해당 페이지의 html 을 모두 가져옴.
 indeed_result = requests.get('https://www.indeed.com/jobs?q=python&limit=50&vjk=f6294b6c85e1cb47')
-#print(indeed_result.text)
+#print(indeed_result.text)zz
 
 # html 을 indeed_soup test로 저장
 indeed_soup = BeautifulSoup(indeed_result.text, "html.parser")
