@@ -53,6 +53,8 @@ pages = []
 for link in links[:-1]:
     pages.append(int(link.string))
 max_pages = pages [-1]
-print(max_pages)
 # 예제3) 결과 값
 # 5 / 배열중 맨 마지막 값, 즉 제일 큰 값을 가져옴.
+
+for n in range(max_pages):
+    print(f"start={n*50}")
