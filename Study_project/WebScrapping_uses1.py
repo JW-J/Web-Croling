@@ -20,8 +20,14 @@ def extract_indeed_pages():
 
 # TEST2.py 에서 5를 반환받아 last_page(5)가 대입된다.
 # 그렇기 때문에 1~5까지 * 50을 해준값을 반환한다.
+
 def extract_indeed_jobs(last_page):
+    jobs = []
     for page in range(last_page):
-        print(f"&start={page*LIMIT}")
-
-
+        result = requests.get(f"{URL}&start={page*LIMIT}")
+        soup = BeautifulSoup(result.text, "html.parser")
+        results = soup.find_all("div", {"class" : "mosaic-zone"})
+        for result in results:
+            title = (result.find("h2", {"class" : "jobTitle"}))
+            print(title)
+        return jobs
